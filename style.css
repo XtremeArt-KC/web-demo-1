@@ -1,0 +1,314 @@
+
+/* reset-styles */
+
+:root {
+    --primary-color:#1d2951;
+    --universal-color: #0e4d92;
+    --prussian: #003152;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', verdana;
+    color: #333;
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/* navigation-styles */
+
+.navbar{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+    border: 0;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+/* reusable-code */
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.5);
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px; 
+    cursor: pointer;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color:var(--universal-color) ;
+    border: 0;
+    transform: scale(0.9);
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3{
+   grid-template-columns: repeat(3, 1fr); 
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* margin */
+.margin1{
+    margin: 1rem 0;
+}
+
+.margin2{
+    margin: 1.5rem 0;
+}
+
+.margin3{
+    margin: 2rem 0;
+}
+
+.margin4{
+    margin: 3rem 0;
+}
+
+.margin5{
+    margin: 4rem 0;
+}
+
+/* margin-all-round */
+.margin-round-1{
+    margin: 1rem;
+}
+
+.margin-round-2{
+    margin: 1.5rem;
+}
+
+.margin-round-3{
+    margin: 2rem;
+}
+
+.margin-round-4{
+    margin: 3rem;
+}
+
+.margin-round-5{
+    margin: 4rem;
+}
+
+
+/* padding */
+.padding1{
+    padding: 1rem 0;
+}
+
+.padding2{
+    padding: 1.5rem 0;
+}
+
+.padding3{
+    padding: 2rem 0;
+}
+
+.padding4{
+    padding: 3rem 0;
+}
+
+.padding5{
+    padding: 3rem 0;
+}
+
+
+/* padding-all-rouund */
+.padding-round-1{
+    padding: 1rem;
+}
+
+.padding-round-2{
+    padding: 1.5rem;
+}
+
+.paddding-round-3{
+    padding: 2rem;
+}
+
+.padding-round-4{
+    padding: 3rem;
+}
+
+.padding-round-5{
+    padding: 4rem;
+}
+
+
+
+/* hero-section-styles */
+
+.hero::before,
+.hero::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+}
+
+.hero{
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.hero .grid{
+    grid-template-columns: 50% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+
+
+.hero .title{
+    font-size: 40px;
+}
+
+.hero .message{
+    margin: 25px 0;
+}
+
+.hero-form .form-control{
+    margin: 30px 0;
+}
+
+.hero-form input[type='text'],
+.hero-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.hero-form input:focus{
+    outline: none;
+}
+
+.hero-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    justify-self: flex-end;
+    z-index: 100;
+}
+
+
+
+/* web-inspirations-styles */
+
+.inspirations{
+    padding-top: 100px;
+}
+
+.inspirations .title{
+    max-width: 500px;
+    margin: auto;
+    font-size: 25px;
+}
+
+.inspirations .grid h3{
+    font-size: 35px;
+}
+
+.inspirations .grid p{
+    font-size: 20px;
+    font-weight: bold;
+}
